@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const boxes = document.querySelectorAll(".code");
 
 boxes[0].focus();
@@ -19,9 +18,7 @@ boxes.forEach((input, idx) => {
         boxes[idx - 1].focus();
       } else {
         input.value = "";
-        if (boxes[idx - 1]) {
-          boxes[idx - 1].focus();
-        }
+        boxes[idx - 1]?.focus();
       }
     }
   });
