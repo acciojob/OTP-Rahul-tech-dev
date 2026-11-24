@@ -10,12 +10,10 @@ boxes.forEach((input, idx) => {
       boxes[idx + 1]?.focus();
     } else if (e.key === "Backspace") {
       e.preventDefault();
-      if (input.value === "" && boxes[idx - 1]) {
+      input.value = "";
+      if (boxes[idx - 1]) {
         boxes[idx - 1].value = "";
         boxes[idx - 1].focus();
-      } else {
-        input.value = "";
-        boxes[idx - 1]?.focus();
       }
     }
   });
