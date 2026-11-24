@@ -18,4 +18,3 @@ boxes.forEach((input, idx) => {
     }
   });
 });
-});
